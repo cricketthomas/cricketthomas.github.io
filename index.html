@@ -36,8 +36,9 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="noun_69.png">
-    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
 
     <script>
         $(function () {
@@ -52,85 +53,89 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LDGHZS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LDGHZS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
-              
-<!-- tabs -->
-<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-    <li class="nav-item active">
-        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="r-tab" data-toggle="tab" href="#rprojects" role="tab" aria-controls="rprojects" aria-selected="false">R Projects</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="python-tab" data-toggle="tab" href="#python" role="tab" aria-controls="python" aria-selected="false">Python</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">JavaScript</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="gis-tab" data-toggle="tab" href="#gis" role="tab" aria-controls="gis" aria-selected="false">GIS Analysis</a>
-    </li>
-</ul>
+
+    <!-- tabs -->
+    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item active">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="r-tab" data-toggle="tab" href="#rprojects" role="tab" aria-controls="rprojects" aria-selected="false">R Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="python-tab" data-toggle="tab" href="#python" role="tab" aria-controls="python" aria-selected="false">Python</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="js-tab" data-toggle="tab" href="#js" role="tab" aria-controls="js" aria-selected="false">JavaScript</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="gis-tab" data-toggle="tab" href="#gis" role="tab" aria-controls="gis" aria-selected="false">GIS Analysis</a>
+        </li>
+    </ul>
 
 
-<!-- panes -->
-<div class="tab-content">
-    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div class="winsize">
-            <div class="container text-center">
-                <h2>Arthur's Home Page</h2>
-                <h4>
-                    <span class="cv">I am a graduating Government and Politics student at the University of Maryland, where I have taken courses
-                        that deal with Geographical Information Systems, Research methods of Social Science using statistical
-                        analysis software of R and Stata, courses that utilized to Python, C++, HTML, CSS and JavaScript
-                        and courses that dealt with other technologies. I am currently learning learning React.js and working
-                        on a few projects. I am planning to continously update this site.
-                        <br>
-                    </span>
-                </h4>
-                <br>
-                <h4>Below you'll find my resume and on the rest of this site, you'll see some of my work, classwork, and interests/projects.</h4>
-                <br>
+    <!-- panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="winsize">
+                <div class="container text-center">
+                    <h2>Arthur's Home Page</h2>
+                    <h4>
+                        <span class="cv">I am a graduating Government and Politics student at the University of Maryland, where I have taken
+                            courses that deal with Geographical Information Systems, Research methods of Social Science using
+                            statistical analysis software of R and Stata, courses that utilized to Python, C++, HTML, CSS
+                            and JavaScript and courses that dealt with other technologies. I am currently learning learning
+                            React.js and working on a few projects. I am planning to continously update this site.
+                            <br>
+                        </span>
+                    </h4>
+                    <br>
+                    <h4>Below you'll find my resume and on the rest of this site, you'll see some of my work, classwork, and
+                        interests/projects.
+                    </h4>
+                    <br>
 
-                <div id='resume'>
-                    <button class="btn btn-dark" data-toggle="collapse" data-target="#res" onclick="resumeFooter();">Show Resume</button>
-                    <div id="res" class="collapse">
-                        <embed src="respdf.pdf" width="600" height="800" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+                    <div id='resume'>
+                        <button class="btn btn-dark" data-toggle="collapse" data-target="#res" onclick="resumeFooter();">Show Resume</button>
+                        <div id="res" class="collapse">
+                            <embed src="respdf.pdf" width="600" height="800" alt="pdf" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="tab-pane" id="rprojects" role="tabpanel" aria-labelledby="r-tab">
-        <div id="rmd"></div>
-    </div>
-    <div class="tab-pane" id="python" role="tabpanel" aria-labelledby="python-tab">
-        <div class="container">
-            <h3 class="text-center">Twilio + Google Civic API Texting Service</h3>
-            <h4 class="text-center">Written in Python using Flask</h4>
-            <p>
-                For this Project, me and my partner decided to build something practical that could be used to help further the knowledge
-                of those around us. We created a texting service that allows you to retrieve information about how to contact
-                your Senator.
-            </p>
-            <div class="text-center">
-                <img style="width:20vw" src="IMG_3415.PNG" alt="Twilio.py example">
-                <img style="width:20vw" src="IMG_3416.PNG" alt="Twilio.py example2">
-            </div>
-            <p>
-                We wanted the project to be relatively user friendly, so we implemented an error checking procedures so that that typo's/spelling
-                would not hinder the overall results of the program.
-                <br> We would have liked to declare all the API calls into one function or class, however, the twilio API is
-                finicky, and we could not save the text responses, so the last response had to contain all the information.
-                We used Regrex to extract the numbers from to add those to the API call to retrieve the information.
-            </p>
-            <pre class="container">
+        <div class="tab-pane" id="rprojects" role="tabpanel" aria-labelledby="r-tab">
+            <div id="rmd"></div>
+        </div>
+        <div class="tab-pane" id="python" role="tabpanel" aria-labelledby="python-tab">
+            <div class="container">
+                <h3 class="text-center">Twilio + Google Civic API Texting Service</h3>
+                <h4 class="text-center">Written in Python using Flask</h4>
+                <p>
+                    For this Project, me and my partner decided to build something practical that could be used to help further the knowledge
+                    of those around us. We created a texting service that allows you to retrieve information about how to
+                    contact your Senator.
+                </p>
+                <div class="text-center">
+                    <img style="width:20vw" src="IMG_3415.PNG" alt="Twilio.py example">
+                    <img style="width:20vw" src="IMG_3416.PNG" alt="Twilio.py example2">
+                </div>
+                <p>
+                    We wanted the project to be relatively user friendly, so we implemented an error checking procedures so that that typo's/spelling
+                    would not hinder the overall results of the program.
+                    <br> We would have liked to declare all the API calls into one function or class, however, the twilio API
+                    is finicky, and we could not save the text responses, so the last response had to contain all the information.
+                    We used Regrex to extract the numbers from to add those to the API call to retrieve the information.
+                </p>
+                <pre class="container">
                 <code class="container">
                 import urllib.request as urlr
                 import urllib.parse as url
@@ -264,17 +269,17 @@
                     app.run(debug=True)
                     </code>
                 </pre>
-            <h3>Other Projects:</h3>
-            <p>
-                Currently, I am working on a Script in Python that Parses through a CSV, then converts it to an XML document. This would
-                allow much more seemless importing of data from the Sophas Application UMD uses, to the Hobsons Application
-                System. The current method of converting data involves a lot of copying and pasting and Excel Macros. The
-                end goal for this program is to be hosted within a GUI using Arg-parse or PyQt.
-                <br>
-                <br> Other Projects I have created is a Twitter Bot that tweets parsed information, and a parsing bot that acts
-                as an RSS feed and emails me every day with updates. Both which were hosted on Heroku.
-            </p>
-            <pre class="container">
+                <h3>Other Projects:</h3>
+                <p>
+                    Currently, I am working on a Script in Python that Parses through a CSV, then converts it to an XML document. This would
+                    allow much more seemless importing of data from the Sophas Application UMD uses, to the Hobsons Application
+                    System. The current method of converting data involves a lot of copying and pasting and Excel Macros.
+                    The end goal for this program is to be hosted within a GUI using Arg-parse or PyQt.
+                    <br>
+                    <br> Other Projects I have created is a Twitter Bot that tweets parsed information, and a parsing bot that
+                    acts as an RSS feed and emails me every day with updates. Both which were hosted on Heroku.
+                </p>
+                <pre class="container">
                 <code class="container">
             import urllib.request
             import smtplib
@@ -333,52 +338,54 @@
                 </code>
             </pre>
 
-        </div>
+            </div>
 
 
-
-    </div>
-    <div class="tab-pane" id="js" role="tabpanel" aria-labelledby="js-tab">
-        <h3 class="container text-center">Tasked to create a simple game, using a few functions</h3>
-        <h4 class="container text-center">Simple Rock, Paper and Siccors Game</h4>
-        <div class="text-center">
-            <img id="rps" src="rps.png" alt="rock paper Siccors game in JS" title="Prof asked not to use GitHub since to avoid people trying to reuse the code in the class">
-        </div>
-
-
-
-    </div>
-    <div class="tab-pane" id="gis" role="tabpanel" aria-labelledby="gis-tab">
-        <div class="container text-center">
-            <h3>ArcMap/GIS was used to create these Maps</h3>
-            <h4>In the Graphic below, I attempt to create equal partisan districts in Maryland
-                <br>LaTex was used for the formatting.</h4>
-            <embed src="hw4_arthur.pdf" width="600" height="800" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
-
-            <h4>In the Graphic below, I attempt to create mutiple Minority Majority Districts</h4>
-            <embed src="Assignment3.pdf" width="600" height="800" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> .
 
         </div>
+        <div class="tab-pane" id="js" role="tabpanel" aria-labelledby="js-tab">
+            <h3 class="container text-center">Tasked to create a simple game, using a few functions</h3>
+            <h4 class="container text-center">Simple Rock, Paper and Siccors Game</h4>
+            <div class="text-center">
+                <img id="rps" src="rps.png" alt="rock paper Siccors game in JS" title="Prof asked not to use GitHub since to avoid people trying to reuse the code in the class">
+            </div>
 
+
+
+        </div>
+        <div class="tab-pane" id="gis" role="tabpanel" aria-labelledby="gis-tab">
+            <div class="container text-center">
+                <h3>ArcMap/GIS was used to create these Maps</h3>
+                <h4>In the Graphic below, I attempt to create equal partisan districts in Maryland
+                    <br>LaTex was used for the formatting.</h4>
+                <embed src="hw4_arthur.pdf" width="600" height="800" alt="pdf"/>
+
+                <h4>In the Graphic below, I attempt to create mutiple Minority Majority Districts</h4>
+                <embed src="Assignment3.pdf" width="600" height="800" alt="pdf"/>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="text-center" id="foot">
+        <footer class="card-footer text-muted bg-primary text-white">
+            <div id = 'footerBar'>
+            <br/>Last updated: 5/19/2018
+            <br>
+            <span id="subfooter">made with bootstrap and vanilla</span>
+            <br>
+            <span id="w3">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:4em;height:1.5em" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+                </a>
+            </span>
+        </div>
+        </footer>
 
     </div>
-</div>
-
-
-<div class="text-center" id="foot">
-    <footer class="card-footer text-muted text-white">
-        <br/>Last updated: 5/19/2018
-        <br>
-        <span id="subfooter">made with bootstrap and vanilla</span>
-        <br>
-        <span id="w3">
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:4em;height:1.5em" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
-            </a>
-        </span>
-    </footer>
-
-</div>
 
 </body>
 

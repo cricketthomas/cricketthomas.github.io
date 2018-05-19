@@ -48,6 +48,10 @@
 }
 
 #foot {
+    background-color: #337ab7;
+}
+
+#footerBar {
     background-color: #235784;
 }
 
@@ -65,7 +69,7 @@ pre code {
     position: relative;
 }
 
-#rps{
+#rps {
     text-align: center;
     width: 40%;
     margin: auto;
