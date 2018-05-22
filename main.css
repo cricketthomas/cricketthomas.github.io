@@ -32,10 +32,26 @@
     border-radius: 0px;
     color: whitesmoke;
 }
+.dropdown-toggle {
+    background-color: #235784 !important;
+    padding: 15em;
+     
+}
+
+.dropdown-menu{
+    background-color: lightblue !important;
+
+}
+.dropdown-item {
+    color: red;
+
+}
+
 
 .btn {
     background-color: lightblue !important;
-    color: black;
+    color: white;
+    padding: 2em;
 }
 
 .winsize {
