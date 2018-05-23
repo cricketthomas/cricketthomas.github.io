@@ -8,6 +8,10 @@ function main() {
         $("#graph").load("LeafLetMaps.html");
     });
 
+
+    resumecollapse.onclick = resumeFooter;
+
+
 } //onload
 
 
