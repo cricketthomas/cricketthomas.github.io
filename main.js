@@ -9,9 +9,6 @@ function main() {
     });
 
 
-    resumecollapse.onclick = resumeFooter;
-
-
 } //onload
 
 
