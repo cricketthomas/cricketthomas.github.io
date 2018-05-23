@@ -13,7 +13,7 @@ function main() {
 
 
 function resumeFooter() {
-    foot.style.paddingTop = "50vh";
+    foot.style.paddingTop = "65vh";
     foot.backgroundColor = "#337ab7";
 }
 
