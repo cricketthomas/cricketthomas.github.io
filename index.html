@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Google Tag Manager -->
     <script>
@@ -36,16 +35,13 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="noun_69.png">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="main.js"></script>
-    <!-- -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <!--  -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body onload="main();">
@@ -82,11 +78,12 @@
                 <div class="container text-center">
                     <h2>Arthur's Home Page</h2>
                     <h4>
-                        <span class="cv">I am a graduating Government and Politics student at the University of Maryland, where I have taken
-                            courses that deal with Geographical Information Systems, Research methods of Social Science using
-                            statistical analysis software of R and Stata, courses that utilized to Python, C++, HTML, CSS
-                            and JavaScript and courses that dealt with other technologies. I am currently learning learning
-                            React.js and working on a few projects. I am planning to continously update this site.
+                        <span class="cv">I am a recent Government and Politics major graduate from the University of Maryland, College Park,
+                            where took courses that dealt with Geographical Information Systems, Research methods of Social
+                            Science using statistical analysis software of R and Stata, courses that utilized to Python,
+                            C++, HTML, CSS and JavaScript and courses that dealt with other technologies. I am currently
+                            learning learning React.js and working on a few projects. I am planning to continously update
+                            this site.
                             <br>
                         </span>
                     </h4>
@@ -98,17 +95,24 @@
 
                     <div id='resume'>
                         <button class="btn btn-dark" data-toggle="collapse" data-target="#res" onclick="resumeFooter();">Show Resume</button>
+                        <!-- onclick="resumeFooter();"-->
                         <div id="res" class="collapse">
-                            <embed src="respdf.pdf" width="600" height="800" alt="pdf" />
+                            <embed src="res copy.pdf" width="600" height="800" alt="pdf" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="tab-pane" id="rprojects" role="tabpanel" aria-labelledby="r-tab">
+        <div class="tab-pane container" id="rprojects" role="tabpanel" aria-labelledby="r-tab">
             <div id="rmd"></div>
+            <!--  -->
         </div>
+
+
+
+
+
         <div class="tab-pane" id="python" role="tabpanel" aria-labelledby="python-tab">
             <div class="container">
                 <h3 class="text-center">Twilio + Google Civic API Texting Service</h3>
@@ -369,7 +373,7 @@
     <div class="text-center" id="foot">
         <footer class="card-footer text-muted bg-primary text-white">
             <div id='footerBar'>
-                <br/>Last updated: 5/19/2018
+                <br/>Last updated: 5/23/2018
                 <br>
                 <span id="subfooter">made with bootstrap and vanilla</span>
                 <br>

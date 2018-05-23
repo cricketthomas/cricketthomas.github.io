@@ -1,19 +1,19 @@
 function main() {
 
-    function resumeFooter() {
-        foot.style.paddingTop = "65vh";
-        foot.backgroundColor = "#337ab7";
-    }
-
-  
-
-
-    $(function loadRMD() {
+    $(function () {
         $("#rmd").load("finalproject.html");
     });
 
+    $(function () {
+        $("#graph").load("LeafLetMaps.html");
+    });
+
+} //onload
+
+
+function resumeFooter() {
+    foot.style.paddingTop = "50vh";
+    foot.backgroundColor = "#337ab7";
 }
 
-function load_rmd() {
-    document.getElementById("content").innerHTML = '<object type="text/html" data="finalproject.html" ></object>';
-}
+$('#res').collapse("toggle");
