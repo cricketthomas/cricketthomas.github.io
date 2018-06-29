@@ -7,7 +7,8 @@ function main() {
     $(function () {
         $("#graph").load("LeafLetMaps.html");
     });
-
+    let date = new Date(document.lastModified);
+    document.getElementById("modDate").innerHTML = date;
 
 } //onload
 
@@ -18,3 +19,6 @@ function resumeFooter() {
 }
 
 $('#res').collapse("toggle");
+
+let date = new Date(document.lastModified);
+document.getElementById("modDate").innerHTML = date;
