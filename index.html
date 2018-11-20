@@ -21,6 +21,13 @@
     </ul>
   </div>
 
+  <div id="app" style="display: none;">
+    <router-link to="/">/home</router-link>
+    <router-link to="/foo/:">/foo</router-link>
+    <router-view></router-view>
+
+  </div>
+
 
 
   <div class="section hero">
@@ -35,14 +42,21 @@
       </div>
     </div>
   </div>
+
+  <div class="project" id="project">
+    <button class="button button-primary" onclick="buttonRead()">Vue Finder</button>
+      <div id="vuefinder" class="scaled"></div>
+  </div>
+
+
+
   <div class="section hero" id="edu">
     <div class="container">
       <div class="row">
         <div class="one-half column">
           <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
-          <button class="button button-primary" onclick="buttonRead()">Try Skeleton</a>
         </div>
-        <div class="one-half column phones">
+        <div class="one-half column">
           <img class="phone" src="IMG_3415.PNG" height="480px">
           <img class="phone" src="IMG_3415.PNG" height="480px">
         </div>
@@ -50,9 +64,6 @@
     </div>
   </div>
 
-  <div class="container" id="project">
-    <div id="vuefinder"></div>
-  </div>
 
 
 
@@ -62,14 +73,6 @@
 
 
 
-
-
-  <div id="app" style="display: none">
-    <router-link to="/">/home</router-link>
-    <router-link to="/foo/:">/foo</router-link>
-    <router-view></router-view>
-
-  </div>
 
   <script>
     const Home = {

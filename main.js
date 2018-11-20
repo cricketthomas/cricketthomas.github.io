@@ -18,7 +18,6 @@ function resumeFooter() {
     foot.backgroundColor = "#337ab7";
 }
 
-$('#res').collapse("toggle");
 
 let date = new Date(document.lastModified);
 document.getElementById("modDate").innerHTML = date;
@@ -30,10 +29,12 @@ function buttonRead() {
         var converter = new showdown.Converter(),
             //text = '# hello, markdown!',
             html = converter.makeHtml(rawtext);
-
         var vuefinder = document.getElementById('vuefinder').innerHTML = html;
 
+
     });
+
+
 }
 /*
 var GitHub = require('github-api');
@@ -47,6 +48,16 @@ var passwordAuth = new GitHub({
   username: 'MY_USERNAME',
   password: 'MY_PASSWORD'
 });
+
+
+var converter = new showdown.Converter();
+    var md = '[**Showdown**](http://www.showdownjs.com) is *great*\n' +
+        'because:\n\n' +
+        ' - it\'s easy to use\n' +
+        ' - it\'s extensible\n' +
+        ' - works in the server and in the browser';
+    var html = converter.makeHtml(md);
+
 
 // you can also provide an OAuth token to authenticate the requests
 var oauthAuth = new GitHub({
