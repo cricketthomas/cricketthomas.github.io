@@ -17,23 +17,23 @@
     <ul>
       <li><a href="#me">About me</a></li>
       <li><a href="#edu">Education</a></li>
-      <li><a href="#project">project</a></li>
+      <li><a href="#projects">project</a></li>
     </ul>
   </div>
 
-  <div id="app" style="display: none;">
-    <router-link to="/">/home</router-link>
-    <router-link to="/foo/:">/foo</router-link>
-    <router-view></router-view>
-
-  </div>
-
-
-
-  <div class="section hero">
-    <div class="container">
-      <div class="row">
-        <p> I am a recent Government and Politics major/graduate from the University of Maryland, College Park,
+  <div class="section personal" id="me">
+    <div class="row container">
+      <div class="six columns">
+        <div class="center">
+          <img src="me.jpeg" alt="Arthur" id="myface">
+        </div>
+      </div>
+      <div class="six columns">
+        <p>
+          Hi, I'm Arthur, but my nickname is Cricket, hence the website domain. Welcome to my personal site.
+        </p>
+        <p> I am a recent Government and Politics major/graduate from the University of Maryland,
+          College Park,
           where took courses that dealt with Geographical Information Systems, Research methods of Social
           Science using statistical analysis software of R and Stata, courses that utilized to Python,
           C++, HTML, CSS and JavaScript and courses that dealt with other technologies. I am currently
@@ -43,12 +43,61 @@
     </div>
   </div>
 
-  <div class="project" id="project">
-    <button class="button button-primary" onclick="buttonRead()">Vue Finder</button>
-      <div id="vuefinder" class="scaled"></div>
+  <div class="section projects" id="projects">
+    <div class="row container">
+      <div class="two columns">
+        <ul>
+          <li onclick="buttonRead('https://raw.githubusercontent.com/cricketthomas/vuefinder/master/README.md')"><a
+              href="#readme">Vue Finder</a></li>
+          <li onclick="buttonRead('https://raw.githubusercontent.com/cricketthomas/gradBot/master/README.md')"><a href="#readme">GradSchool
+              Chatbot</a></li>
+          <li onclick="buttonRead('https://raw.githubusercontent.com/cricketthomas/Twillio-Project/master/README.md')"><a
+              href="#readme">Senator-Info Text</a></li>
+        </ul>
+
+      </div>
+      <div class="ten columns" id="readme">
+        <p id="insertDiv" class="scaled">
+          Please use one of the following list items to load the Read Me files from github, it provides
+          details about my personal project that I created or which I am currently working on.
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+      </div>
+    </div>
   </div>
 
 
+  <div class="section contact" id="me">
+    <div class="row container">
+      <div class="six columns">
+      </div>
+      <div class="six columns">
+        <p> I am a recent Government and Politics major/graduate from the University of Maryland,
+          College Park,
+          where took courses that dealt with Geographical Information Systems, Research methods of Social
+          Science using statistical analysis software of R and Stata, courses that utilized to Python,
+          C++, HTML, CSS and JavaScript and courses that dealt with other technologies. I am currently
+          learning learning Vue.js and working on a few projects.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--
+<div class="project" id="project">
+
+    <ul>
+      <li>Vue Finder</li>
+      <li>Vue Finder</li>
+    </ul>
+
+    <button class="button button-primary" onclick="buttonRead()">Vue Finder</button>
+
+    <div id="vuefinder" class="scaled"></div>
+  </div>
 
   <div class="section hero" id="edu">
     <div class="container">
@@ -63,6 +112,7 @@
       </div>
     </div>
   </div>
+-->
 
 
 
@@ -73,6 +123,12 @@
 
 
 
+
+  <div id="app" style="display: none;">
+    <router-link to="/">/home</router-link>
+    <router-link to="/foo/:">/foo</router-link>
+    <router-view></router-view>
+  </div>
 
   <script>
     const Home = {

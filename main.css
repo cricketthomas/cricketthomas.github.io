@@ -1,3 +1,7 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 body {
   margin: auto;
 }
@@ -7,21 +11,23 @@ body {
   position: fixed;
   display: flex;
   justify-content: center;
-  background-color: wheat;
+  background-color: #9FBFC5;
   opacity: 0.75;
-  filter: alpha(opacity=20); /* For IE8 and earlier */
+  filter: alpha(opacity=20);
+  /* For IE8 and earlier */
   width: 100%;
   height: 6vh;
   z-index: 1;
 }
 
-.nav:hover{
+.nav:hover {
   opacity: 0.9;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
 
 }
 
-li {
+.nav li {
   display: inline-block;
   margin: 10px 10px;
 }
@@ -35,13 +41,23 @@ li {
   text-align: left;
   height: 165px;
 }
+
 .scaled {
-  transform: scale(0.7); /* Equal to scaleX(0.7) scaleY(0.7) */
+  transform: scale(0.85);
+  /* Equal to scaleX(0.7) scaleY(0.7) */
 }
 
-.project{
-  border: 2px solid black;;
+
+.center {
+  display: flex;
+  justify-content: center
 }
+
+#myface {
+  height: 30vh;
+  border-radius: 10%;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -49,10 +65,47 @@ li {
   margin-left: auto;
 }
 
+.top {
+  vertical-align: top;
+  margin-top: -90px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.personal {
+  background-color: azure;
+}
+
+#readme {
+  border: 2px solid black;
+  background-color: whitesmoke;
+  border-radius: .5em;
+}
+
+#readme a {
+  font-size: 2vh
+}
+
+.projects {
+  background-color: #42A3B5;
+}
+
+
+.projects li a {
+  color: navy
+}
+
+
+.contact {
+  background-color: #013039;
+}
+
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
+
 }
 
 @media (min-width: 992px) {
