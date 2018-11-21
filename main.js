@@ -1,14 +1,5 @@
 function main() {
 
-    $(function () {
-        $("#rmd").load("finalproject.html");
-    });
-
-
-
-    $(function () {
-        $("#graph").load("LeafLetMaps.html");
-    });
     let date = new Date(document.lastModified);
     //document.getElementById("modDate").innerHTML = date;
 
@@ -18,7 +9,7 @@ function main() {
 
 
 let date = new Date(document.lastModified);
-document.getElementById("modDate").innerHTML = date;
+//document.getElementById("modDate").innerHTML = date;
 
 function readMe(url) {
 
