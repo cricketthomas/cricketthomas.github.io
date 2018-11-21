@@ -98,11 +98,13 @@ body {
 }
 
 
-.projects a{
+.projects a {
   color: navy
-
 }
 
+.contact {
+  color: white;
+}
 
 sub {
   font-size: 9pt;
