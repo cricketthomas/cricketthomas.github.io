@@ -1,6 +1,41 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5LDGHZS');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116423688-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116423688-1');
+  </script>
+  <!-- End Google Tag Manager -->
+
+
+
+
   <meta charset="utf-8" />
   <title>Arthur Thomas</title>
   <link rel="icon" href="favicon.png">
@@ -13,6 +48,11 @@
 </head>
 
 <body onload="main();">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LDGHZS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
   <div class="nav">
     <ul>
       <li><a href="#me">about</a></li>
@@ -84,10 +124,10 @@
           </ul>
 
         <li>Data Analysis Reports using In ArcGis
-        <ul>
-          <li><a href="Assignment3.pdf">Maryland District Map — Majority Minority Districts</a></li>
-          <li><a href="hw4_arthur.pdf">Maryland District Map — Equal Partisan Districts</a></li>
-        </ul>
+          <ul>
+            <li><a href="Assignment3.pdf">Maryland District Map — Majority Minority Districts</a></li>
+            <li><a href="hw4_arthur.pdf">Maryland District Map — Equal Partisan Districts</a></li>
+          </ul>
         </li>
       </ol>
     </div>
@@ -113,7 +153,7 @@
 
 -->
 
-<link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="main.css" />
 </body>
 
 </html>
