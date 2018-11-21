@@ -8,7 +8,7 @@ body {
 
 .nav {
   vertical-align: top;
-  position: fixed;
+  position: fixed !important;
   display: flex;
   justify-content: center;
   background-color: #9FBFC5;
@@ -32,8 +32,14 @@ body {
   margin: 10px 10px;
 }
 
+.nav a {
+  color: black;
+  text-decoration: unset;
+}
+
+
 .section {
-  padding: 14rem 0 15rem;
+  padding: 8rem 0 15rem;
 }
 
 .hero {
@@ -88,13 +94,20 @@ body {
 
 .projects {
   background-color: #42A3B5;
+  overflow: hidden;
 }
 
 
-.projects li a {
+.projects a{
   color: navy
+
 }
 
+
+sub {
+  font-size: 9pt;
+  color: gray;
+}
 
 .contact {
   background-color: #013039;
@@ -105,7 +118,6 @@ body {
   .container {
     width: 750px;
   }
-
 }
 
 @media (min-width: 992px) {

@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <meta charset="utf-8" />
+  <title>Arthur Thomas</title>
+  <link rel="icon" href="favicon.png">
+  <meta name="description" content="Arthur's personal website">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="main.js"></script>
-  <link rel="stylesheet" href="main.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.0/showdown.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body onload="main();">
   <div class="nav">
     <ul>
-      <li><a href="#me">About me</a></li>
-      <li><a href="#edu">Education</a></li>
-      <li><a href="#projects">project</a></li>
+      <li><a href="#me">about</a></li>
+      <li><a href="#research">research</a></li>
+      <li><a href="#projects">programming</a></li>
     </ul>
   </div>
 
@@ -44,15 +44,19 @@
   </div>
 
   <div class="section projects" id="projects">
+    <h4 class="center"><a href="https://github.com/cricketthomas">Programming Projects</a></h4>
+
     <div class="row container">
       <div class="two columns">
         <ul>
-          <li onclick="buttonRead('https://raw.githubusercontent.com/cricketthomas/vuefinder/master/README.md')"><a
-              href="#readme">Vue Finder</a></li>
-          <li onclick="buttonRead('https://raw.githubusercontent.com/cricketthomas/gradBot/master/README.md')"><a href="#readme">GradSchool
+          <li onclick="readMe('https://raw.githubusercontent.com/cricketthomas/vuefinder/master/README.md')"><a href="#readme">Vue
+              Finder</a></li>
+          <li onclick="readMe('https://raw.githubusercontent.com/cricketthomas/gradBot/master/README.md')"><a href="#readme">GradSchool
               Chatbot</a></li>
-          <li onclick="buttonRead('https://raw.githubusercontent.com/cricketthomas/Twillio-Project/master/README.md')"><a
+          <li onclick="readMe('https://raw.githubusercontent.com/cricketthomas/Twillio-Project/master/README.md')"><a
               href="#readme">Senator-Info Text</a></li>
+          <li onclick="readMe('https://raw.githubusercontent.com/cricketthomas/recommendations/master/README.md')"><a
+              href="#readme">Python Recommendation System</a></li>
         </ul>
 
       </div>
@@ -69,8 +73,27 @@
     </div>
   </div>
 
+  <div class="center">
+    <div class="section " id="research">
+      <h4>Research Reports <br> <sub>all navigate to seperate files</sub></h4>
+      <ol>
 
-  <div class="section contact" id="me">
+        <li>Data Analysis in R
+          <ul>
+            <li><a href="finalproject.html">What affect sucicide rates</a></li>
+          </ul>
+
+        <li>Data Analysis Reports using In ArcGis
+        <ul>
+          <li><a href="Assignment3.pdf">Maryland District Map — Majority Minority Districts</a></li>
+          <li><a href="hw4_arthur.pdf">Maryland District Map — Equal Partisan Districts</a></li>
+        </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section contact" id="contact">
     <div class="row container">
       <div class="six columns">
       </div>
@@ -87,90 +110,10 @@
   </div>
 
   <!--
-<div class="project" id="project">
 
-    <ul>
-      <li>Vue Finder</li>
-      <li>Vue Finder</li>
-    </ul>
-
-    <button class="button button-primary" onclick="buttonRead()">Vue Finder</button>
-
-    <div id="vuefinder" class="scaled"></div>
-  </div>
-
-  <div class="section hero" id="edu">
-    <div class="container">
-      <div class="row">
-        <div class="one-half column">
-          <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
-        </div>
-        <div class="one-half column">
-          <img class="phone" src="IMG_3415.PNG" height="480px">
-          <img class="phone" src="IMG_3415.PNG" height="480px">
-        </div>
-      </div>
-    </div>
-  </div>
 -->
 
-
-
-
-
-
-
-
-
-
-
-  <div id="app" style="display: none;">
-    <router-link to="/">/home</router-link>
-    <router-link to="/foo/:">/foo</router-link>
-    <router-view></router-view>
-  </div>
-
-  <script>
-    const Home = {
-      props: ['name'],
-      template: '<div>Hello {{ $route.params.test }}</div>'
-    }
-    const Foo = {
-      props: ['name'],
-      template: '<div>Hello  foo{{ name }}</div>'
-    }
-
-    const router = new VueRouter({
-      mode: 'history',
-      routes: [{
-          path: '/',
-          components: {
-            default: Home,
-            foo: Foo
-          },
-          props: {
-            default: {
-              name: 'Home'
-            },
-            foo: {
-              name: 'Foo'
-            }
-          },
-        },
-        {
-          path: '/foo/:test',
-          name: "foo",
-          component: Foo,
-          props: true
-        }
-      ]
-    })
-
-    new Vue({
-      router,
-      el: '#app'
-    })
-  </script>
+<link rel="stylesheet" href="main.css" />
 </body>
 
 </html>
