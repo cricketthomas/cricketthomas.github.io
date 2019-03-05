@@ -2,6 +2,10 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: auto;
 }
@@ -117,9 +121,10 @@ ol {
   overflow: hidden;
 }
 
-h4{
+h4 {
   font-weight: bold;
 }
+
 .contact {
   color: white;
 }
@@ -145,10 +150,12 @@ sub {
 }
 
 @media (max-width: 640px) {
-  #contactLink, #mobileProjects{
+
+  #contactLink,
+  #mobileProjects {
     display: none;
   }
-  
+
 }
 
 @media (min-width: 992px) {
